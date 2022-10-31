@@ -1,3 +1,12 @@
+""" GRUPO 22 
+
+Equipe:
+LARISSA HEY D'ANDRADE
+JOAO VICTOR PIRES DE CAMPOS
+LUIZ OTAVIO DE AZEVEDO MACIEL
+WU HSUAN YI
+"""
+
 import pyrebase, os, dotenv, stat
 from pathlib import Path
 from datetime import datetime, date
@@ -17,7 +26,7 @@ class Authentication:
         self.idToken=''
 
     def execute(self):
-        """ Rotina principal, responsável pela execução """
+        # """ Rotina principal, responsável pela interação com usuário """
         
         print("O que deseja fazer?")
         print("1 - Criar uma conta;\n"
@@ -40,7 +49,7 @@ class Authentication:
                 input("Digite 1 ou 2")
 
     def verify_mail(self):
-        """ rotina responsável pela verificação de email """
+        # """ Rotina responsável pela verificação de email """
         users=self.info["users"]
         verify_email = users[0]["emailVerified"]
 
