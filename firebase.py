@@ -34,7 +34,7 @@ class Authentication:
         print("1 - Criar uma conta;\n"
             "2 - Checar informações da conta;\n")
 
-        choice = 0
+        choice = '0'
 
         while (not self.choice_is_valid(choice)):
             choice = input()
@@ -49,14 +49,14 @@ class Authentication:
                 elif choice == '2':
                     self.status = self.sign_in_user()
                     break
-                
+
             else:
                 self.status = ''
                 print("Você deve escolher 1 ou 2")
                 input("Digite 1 ou 2")
 
     def choice_is_valid(self, choice):
-        if (choice == '1' or '2'):
+        if (choice == '1' or choice == '2'):
             return True
 
         return False
