@@ -1,4 +1,5 @@
-""" GRUPO 22 
+""" 
+GRUPO 22 
 
 Equipe:
 Larissa Hey D'Andrade (Inteligência Artificial Aplicada)
