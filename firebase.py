@@ -1,10 +1,11 @@
 """ GRUPO 22 
 
 Equipe:
-LARISSA HEY D'ANDRADE
-JOAO VICTOR PIRES DE CAMPOS
-LUIZ OTAVIO DE AZEVEDO MACIEL
-WU HSUAN YI
+Larissa Hey D'Andrade (Inteligência Artificial Aplicada)
+João Victor Pires de Campos (Gestão de Tecnologia da Informação)
+Luiz Otávio de Azevedo Maciel ()
+Wu Hsuan Yi Pedro (Big Data e Inteligência Analítica)
+
 """
 
 import pyrebase, os, dotenv, stat
