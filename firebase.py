@@ -4,7 +4,7 @@ GRUPO 22
 Equipe:
 Larissa Hey D'Andrade (Inteligência Artificial Aplicada)
 João Victor Pires de Campos (Gestão de Tecnologia da Informação)
-Luiz Otávio de Azevedo Maciel ()
+Luiz Otávio de Azevedo Maciel (Análise e Desenvolvimento de Sistemas)
 Wu Hsuan Yi Pedro (Big Data e Inteligência Analítica)
 
 """
@@ -34,21 +34,31 @@ class Authentication:
         print("1 - Criar uma conta;\n"
             "2 - Checar informações da conta;\n")
 
-        choice = input()
-        print()
-        while (choice != '1' or '2'):
-            self.email=input("Digite seu e-mail: ")
-            self.password=input("Digite sua senha, com pelo menos 6 caracteres: ")
-            if choice == '1':
-                self.status = self.create_user()
-                break
-            elif choice == '2':
-                self.status = self.sign_in_user()
-                break
+        choice = 0
+        
+        while (not self.choice_is_valid(choice)):
+            choice = input()
+            print()
+            if (self.choice_is_valid(choice)):
+                self.email=input("Digite seu e-mail: ")
+                self.password=input("Digite sua senha, com pelo menos 6 caracteres: ")
+
+                if choice == '1':
+                    self.status = self.create_user()
+                    break
+                elif choice == '2':
+                    self.status = self.sign_in_user()
+                    break
             else:
                 self.status = ''
                 print("Você deve escolher 1 ou 2")
                 input("Digite 1 ou 2")
+
+    def choice_is_valid(self, choice):
+        if (choice == '1' or '2'):
+            return True
+
+        return False
 
     def verify_mail(self):
         # """ Rotina responsável pela verificação de email """
