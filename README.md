@@ -1,11 +1,8 @@
-# controle_acesso
+# Autenticação
 
-Configurando o projeto
+Script de autenticação com Firebase
+- Autenticação
+- Verificação de email
+- Criação de usuário
 
-1. Crie uma venv
-
-python -m venv venv
-
-(use esse nome para não fazer upload no git, se usar outro nome adicione-o no arquivo .gitignore)
-
-2. 
+Trabalho de Segurança da Informação - PUCPR
